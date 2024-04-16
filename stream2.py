@@ -7,7 +7,7 @@ from mapping import ccsc,aprc,aprdrgc
 import matplotlib.pyplot as plt
 
 loded_model=joblib.load('lr.pkl')
-dt=pd.read_csv('Hospital_Inpatient_Discharges__SPARCS_De-Identified___2015.csv')
+dt=pd.read_csv('Hospital_Inpatient_Discharges__SPARCS_De-Identified___2015.csv', low_memory=False)
 age_string_index = {'0 to 17': 1, '18 to 29': 2, '30 to 49': 3, '50 to 69': 4, '70 or Older': 5}
 gender_string_index = {'F':1,'M':2,'U':3}
 admission_string_index = {'Emergency': 1, 'Urgent': 2, 'Elective': 3, 'Not Available': 4, 'Trauma': 5,'Newborn':6}

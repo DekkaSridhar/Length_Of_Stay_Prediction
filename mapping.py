@@ -1,5 +1,5 @@
 import pandas as pd
-df=pd.read_csv("Hospital_Inpatient_Discharges__SPARCS_De-Identified___2015.csv")
+df=pd.read_csv("Hospital_Inpatient_Discharges__SPARCS_De-Identified___2015.csv", low_memory=False)
 ccsd=df["CCS Diagnosis Description"].unique()
 ccsc={}
 for i in  ccsd:

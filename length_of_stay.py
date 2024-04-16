@@ -9,10 +9,9 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn import metricss
+from sklearn import metrics
 
 data = pd.read_csv("Hospital_Inpatient_Discharges__SPARCS_De-Identified___2015.csv", low_memory=False)
-
 
 # For simplicity, let's drop rows with missing values and drop non-essential columns
 # Drop Unuseful Columns
