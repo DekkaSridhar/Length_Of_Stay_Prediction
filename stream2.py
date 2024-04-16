@@ -241,6 +241,7 @@ background-position: 0 0,29px 29px;
 
         return self
 
-
-sa=streamlit()
-sa.construct_app()
+if __name__ == "__main__":
+    sa=streamlit()
+    st.port = 8501  # Specify the port
+    sa.construct_app()
