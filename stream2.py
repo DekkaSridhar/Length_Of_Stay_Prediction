@@ -26,7 +26,7 @@ dt.loc[missing_indices, 'Facility Id'] = np.random.choice(facility_id_counts.ind
 
 
 
-class streamlit:
+class streamlit_func:
     def __init__(self):
         self.model=loded_model
         self.CCS_code_str=None
@@ -242,6 +242,5 @@ background-position: 0 0,29px 29px;
         return self
 
 if __name__ == "__main__":
-    sa=streamlit()
-    st.port = 8501  # Specify the port
+    sa=streamlit_func()
     sa.construct_app()
